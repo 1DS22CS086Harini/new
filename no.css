@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+  }
+  
+  .gif {
+    width: 300px;
+    height: auto;
+    animation: shake 0.5s ease-in-out infinite;
+  }
+  
+  .message {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff5733; /* Red-orange color */
+    margin-top: 20px;
+    animation: bounce 2s ease infinite;
+  }
+  
+  /* Animation to shake the GIF */
+  @keyframes shake {
+    0% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+  
+  /* Animation to make the message bounce */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  

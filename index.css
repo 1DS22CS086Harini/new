@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2017/03/12/10/32/valentine-2136753_1280.jpg');
+
+   /* Replace with your background image URL */
+  /* background-image: url('https://cdn.pixabay.com/photo/2018/02/23/12/38/flower-3175428_1280.jpg');*/
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    text-align: left-top;
+    color: black;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .heart {
+    color: white; /* Make the heart emoji white */
+  }
+  
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button.yes {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button.no {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
